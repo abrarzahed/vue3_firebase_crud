@@ -1,7 +1,6 @@
 <template>
   <div class="todo">
-    <div class="title has-text-centered">Vue Todo</div>
-
+    <div class="title has-text-centered">Vue3 Todo</div>
     <form @submit.prevent="addTodo">
       <div class="field is-grouped mb-5">
         <p class="control is-expanded">
@@ -152,10 +151,18 @@ const toggleDone = (id) => {
 
 <style>
 @import "bulma\css\bulma.min.css";
+body {
+  background: #eee;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
 .todo {
-  max-width: 500px;
-  padding: 20px;
-  margin: 0 auto;
+  width: 600px;
+  padding: 40px;
+  background: #fff;
+  margin: 50px auto;
+  border-radius: 8px;
 }
 .line-through {
   text-decoration: line-through;
